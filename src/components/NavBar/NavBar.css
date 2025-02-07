@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-item {
+  list-style: none;
+  padding: 0.8rem 0.5rem;
+  /* background-color: #93baee; */
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    height: 100%;
+    /* background-color: #93eed7; */
+    transition: all 0.2s ease-in;
+}
+
+.nav-item .active {
+    background-color: #96ee93;
+    font-size: 1.4rem;
+    padding: .4rem .5rem;
+    border-radius: 0.7rem;
+    font-weight: 600;
+}
