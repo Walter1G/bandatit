@@ -14,12 +14,14 @@ function App() {
       <div className="container">
         <BrowserRouter>
           <NavBar />
+          <div className="content">
           <Routes>
             <Route path="/" element={<MainLayout />} />
             <Route path="/vendor" element={<VendorLayout />} />
             <Route path="/admin" element={<AdminLayout />} />
             <Route path="*" element={<NotFound />} />
-          </Routes>
+            </Routes>
+            </div>
           <Footer />
         </BrowserRouter>
       </div>

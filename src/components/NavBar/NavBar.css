@@ -2,12 +2,12 @@
   background-color: #f8f9fa;
   border-bottom: 1px solid #e9ecef;
   padding: 0.5rem 1rem;
+  width: 100%;
 }
 
 .navbar-nav {
   display: flex;
-  width: 50%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
@@ -15,7 +15,7 @@
 .nav-item {
   list-style: none;
   padding: 0.8rem 0.5rem;
-  /* background-color: #93baee; */
+
 }
 
 .nav-item a {
@@ -23,7 +23,7 @@
     color: #000;
     font-size: 1.2rem;
     height: 100%;
-    /* background-color: #93eed7; */
+
     transition: all 0.2s ease-in;
 }
 
@@ -33,4 +33,56 @@
     padding: .4rem .5rem;
     border-radius: 0.7rem;
     font-weight: 600;
+}
+
+.mid-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.right-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right-nav .cart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.cart img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.logo{
+    position: relative;
+    left: 1rem;    
+    padding: 0.5rem 1rem;
+    
+
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.logo img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.right-nav{
+    position: relative;
+    right: 2rem;
 }
