@@ -1,5 +1,7 @@
 import "./Latest.css";
-import {useState,useEffect} from 'react'
+
+import { useState, useEffect } from "react";
+import ProductCard from "../productCard/ProductCard";
 const Latest = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -12,8 +14,11 @@ const Latest = () => {
     async function fetchOffers() {
       try {
         setLoading(true);
-        const res = await fetch("http://localhost:8000/products", { signal });
-        if (!res.ok) throw new Error("Failed to fetch offers");
+        const res = await fetch(
+          "http://localhost:8000/products?_sort=date&_order=desc&_limit=6",
+          { signal }
+        );
+        if (!res.ok) throw new Error("Failed to fetch Latest");
         const data = await res.json();
         setData(data);
       } catch (error) {
@@ -27,7 +32,7 @@ const Latest = () => {
 
     fetchOffers();
 
-    return () => abortController.abort(); // Cleanup function
+    return () => abortController.abort();
   }, []);
 
   useEffect(() => {
@@ -35,16 +40,15 @@ const Latest = () => {
   }, [data]);
 
   return (
-    <section className="current-offers">
-      <h2>Hot🔥🔥🔥 Offers</h2>
-      <div className="offers">
+    <section className="latest-items">
+      <h2>New 📦📦 Arrivals </h2>
+      <div className="items">
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error.message}</p>}
-        {data
-          .filter((offer) => offer.onOffer == true)
-          .map((offer) => (
-            <ProductCard key={offer.id} product={offer} />
-          ))}
+
+        {data.map((latest) => (
+          <ProductCard key={latest.id} product={latest} />
+        ))}
       </div>
     </section>
   );

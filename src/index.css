@@ -21,6 +21,7 @@
   align-items: center;
   height: 80vh;
   background-color: #f1f1f1;
+  gap: 1rem;
 }
 
 .logo-icon {

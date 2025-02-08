@@ -146,5 +146,25 @@
       "title": "Mobile Phones",
       "description": "Latest smartphones and mobile accessories."
     }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "user": "Alice Johnson",
+      "comment": "Great customer service and fast delivery!",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "user": "Bob Williams",
+      "comment": "High-quality products at a reasonable price.",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "user": "Charlie Brown",
+      "comment": "Amazing experience, will buy again!",
+      "rating": 5
+    }
   ]
 }

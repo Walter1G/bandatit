@@ -7,12 +7,18 @@ const Offer = ({ product }) => {
         <img src={product.imageurl} alt={product.title} />
       </div>
       <p className="title">{product.title}</p>
-      <div className="price">
-        Was
-        <span className="was"> ${product.price}</span>
-        Now
-      <span className="now">${(Number(product.price) * 0.6).toFixed(2)}</span>
-      </div>
+      {product.onOffer && (
+        <div className="price">
+          Was
+          <span className="was"> ${product.price}</span>
+          Now
+          <span className="now">
+            ${(Number(product.price) * 0.6).toFixed(2)}
+          </span>
+        </div>
+      )}
+
+      {!product.onOffer && <p>{product.price}</p>}
     </div>
   );
 };

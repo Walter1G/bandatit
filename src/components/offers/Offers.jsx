@@ -29,7 +29,7 @@ const Offers = () => {
 
     fetchOffers();
 
-    return () => abortController.abort(); // Cleanup function
+    return () => abortController.abort(); 
   }, []);
 
   useEffect(() => {

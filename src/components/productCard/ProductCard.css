@@ -24,6 +24,8 @@
 
 .price {
   font-size: 1.5;
+  align-items: center;
+  justify-content: center;
 }
 .was {
   text-decoration: line-through;
@@ -39,6 +41,12 @@
   padding: 0.5rem;
   border-radius: 0.8rem;
   animation: glow 0.7s infinite alternate-reverse;
+  position: sticky;
+}
+
+p,
+.price {
+  margin-left: 0.4rem;
 }
 
 @keyframes glow {
@@ -48,6 +56,6 @@
   }
   100% {
     background: rgb(113, 228, 113);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
