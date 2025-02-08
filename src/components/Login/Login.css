@@ -1,0 +1,50 @@
+.loginform {
+  background-color: rgb(221, 252, 221);
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 40vh;
+  min-width: 20vw;
+  place-items: center;
+  margin: auto 0;
+  box-shadow: 10px 10px 4px rgb(200, 199, 199);
+}
+
+.form-input {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .3rem;
+}
+
+.form-input label {
+  font-weight: 600;
+  margin-left: 2px;
+}
+.form-input input {
+  border: none;
+  padding: 0.4rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.btn {
+  padding: 0.3rem;
+}
+.btn.login {
+  width: 100%;
+  display: flex;
+justify-content: center;
+}
+.btn.login button {
+  width: 90%;
+  height: 2rem;
+  border-radius: 10px;
+  border: transparent;
+  background-color: #96ee93;
+  font-size: 1.3rem;
+}
+
+.loginform .sign-up {
+  margin-top: 2rem;
+}

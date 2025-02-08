@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./NavBar.css";
 import cartIcon from "../../Assets/cartIcon.png";
 import logo from "../../Assets/logo.png";
@@ -37,7 +37,7 @@ const NavBar = () => {
                           </NavLink>
                           <p>4</p>
             </li>
-            <li>profile</li>
+            <li className="btn"><Link to={"/auth"}>Login</Link></li>
           </ul>
         </li>
       </ul>

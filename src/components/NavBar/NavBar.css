@@ -66,6 +66,21 @@
     width: 2rem;
     height: 2rem;
 }
+.navbar-nav .right-nav .btn a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    background-color: #96ee93;
+    padding: .8rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.navbar-nav .right-nav .btn a:hover{
+    background-color: #6ad567;
+}
 
 .logo{
     position: relative;
