@@ -6,9 +6,8 @@ import MainLayout from "./pages/MainLayout";
 import VendorLayout from "./pages/VendorLayout";
 import AdminLayout from "./pages/AdminLayout";
 import NavBar from "./components/NavBar/NavBar";
-import AuthPage from "./pages/AuthPage"
+import AuthPage from "./pages/AuthPage";
 import Signup from "./components/Singup/Signup";
-
 
 function App() {
   return (
@@ -18,17 +17,14 @@ function App() {
           <NavBar />
           <div className="content">
             <Routes>
-            <Route path="/auth" element={<AuthPage />} />
-            <Route path="/signup" element={<Signup />} />
-              <Route path="/" element={<MainLayout />} >
-                
-              </Route>
-            <Route path="/vendor" element={<VendorLayout />} />
-            <Route path="/admin" element={<AdminLayout />} />
-            <Route path="*" element={<NotFound />} />
+              <Route path="/auth" element={<AuthPage />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/" element={<MainLayout />}></Route>
+              <Route path="/vendor" element={<VendorLayout />} />
+              <Route path="/admin" element={<AdminLayout />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
-            </div>
-         
+          </div>
         </BrowserRouter>
       </div>
     </>

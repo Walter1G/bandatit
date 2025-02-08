@@ -2,8 +2,15 @@ import { Link, NavLink } from "react-router-dom";
 import "./NavBar.css";
 import cartIcon from "../../Assets/cartIcon.png";
 import logo from "../../Assets/logo.png";
+import { useAuth } from "../../utilities/AuthContext";
 
 const NavBar = () => {
+  const { user,logout } = useAuth();
+
+  function handleLog() {
+    user && logout()
+    
+  }
   return (
     <nav className="navbar">
       <ul className="navbar-nav">
@@ -16,15 +23,15 @@ const NavBar = () => {
 
         <li className="mid-nav">
           <ul>
-            <li className="nav-item">
+           { user &&<li className="nav-item">
               <NavLink to="/">Home</NavLink>
-            </li>
-            <li className="nav-item">
+            </li>}
+           { user?.roleId >=2 && <li className="nav-item">
               <NavLink to="/vendor">Vendor</NavLink>
-            </li>
-            <li className="nav-item">
+            </li>}
+            {user?.roleId >=3 && <li className="nav-item">
               <NavLink to="/admin">Admin</NavLink>
-            </li>
+            </li>}
           </ul>
               </li>
               
@@ -37,7 +44,7 @@ const NavBar = () => {
                           </NavLink>
                           <p>4</p>
             </li>
-            <li className="btn"><Link to={"/auth"}>Login</Link></li>
+            <li className="btn" key={"log"} onClick={handleLog}><Link to={"/auth"}>{user?"Log out":"Log In"}</Link></li>
           </ul>
         </li>
       </ul>
