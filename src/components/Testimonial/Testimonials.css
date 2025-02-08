@@ -1,0 +1,21 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-top: 0.1rem;
+  min-height: 40vh;
+  
+}
+.testimonials h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  text-decoration: underline;
+}
+
+.testimonials-items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 89%;
+  height: 100%;
+  
+}

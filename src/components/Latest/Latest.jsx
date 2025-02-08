@@ -11,7 +11,7 @@ const Latest = () => {
     const abortController = new AbortController();
     const signal = abortController.signal;
 
-    async function fetchOffers() {
+    async function fetchLatest() {
       try {
         setLoading(true);
         const res = await fetch(
@@ -30,14 +30,12 @@ const Latest = () => {
       }
     }
 
-    fetchOffers();
+    fetchLatest();
 
     return () => abortController.abort();
   }, []);
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
+
 
   return (
     <section className="latest-items">

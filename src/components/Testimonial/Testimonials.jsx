@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import ProductCard from "../productCard/ProductCard";
-import "./Offers.css";
-
-const Offers = () => {
+import Testimony from "./Testimony";
+import "./Testimonials.css"
+const Testimonials = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -11,11 +10,13 @@ const Offers = () => {
     const abortController = new AbortController();
     const signal = abortController.signal;
 
-    async function fetchOffers() {
+    async function fetchTestimonials() {
       try {
         setLoading(true);
-        const res = await fetch("http://localhost:8000/products", { signal });
-        if (!res.ok) throw new Error("Failed to fetch offers");
+        const res = await fetch("http://localhost:8000/testimonials", {
+          signal,
+        });
+        if (!res.ok) throw new Error("Failed to fetch data");
         const data = await res.json();
         setData(data);
       } catch (error) {
@@ -27,27 +28,23 @@ const Offers = () => {
       }
     }
 
-    fetchOffers();
+    fetchTestimonials();
 
-    return () => abortController.abort(); 
+    return () => abortController.abort();
   }, []);
 
-  
-
   return (
-    <section className="current-offers">
-      <h2>Hot🔥🔥🔥 Offers</h2>
-      <div className="offers">
+    <section className="testimonials">
+      <h2>Testimonials</h2>
+      <div className="testimonials-items">
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error.message}</p>}
-        {data
-          .filter((offer) => offer.onOffer == true)
-          .map((offer) => (
-            <ProductCard key={offer.id} product={offer} />
-          ))}
+        {data.map((testimony) => {
+          return <Testimony key={testimony.id} testimony={testimony} />;
+        })}
       </div>
     </section>
   );
 };
 
-export default Offers;
+export default Testimonials;

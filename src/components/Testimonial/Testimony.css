@@ -1,0 +1,16 @@
+.testimonial p{
+    margin-bottom: .8rem;
+    font-size: 1.2rem;
+    
+}
+.testimonial p span{
+    font-weight: 600;
+
+}
+
+.testimonial{
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 10px;
+    min-height: 100%;
+}

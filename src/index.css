@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   transition: all 0.2 ease-in;
+  scroll-behavior: smooth;
 }
 .container {
   width: 100%;
@@ -28,21 +29,7 @@
   width: 2rem;
   height: 2rem;
 }
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  padding: 1rem;
-}
 
-.footer-center ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.4rem;
-}
 
 .main {
   display: flex;
