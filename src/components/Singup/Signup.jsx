@@ -1,4 +1,6 @@
 import "./Signup.css";
+import { Link } from "react-router-dom";
+
 const Signup = () => {
   return (
     <div className="signup-page">
@@ -45,6 +47,18 @@ const Signup = () => {
               <option value={1}>Buyer</option>
               <option value={2}>Vendor</option>
             </select>
+          </div>
+          <div className="form-row">
+            <Link to={"/"} className="btn btn-cancel">
+              Cancel
+            </Link>
+            <button className="btn btn-primary">Create Account</button>
+          </div>
+
+          <div className="form-row login">
+            <p>
+              Already have an account? <Link to={"/auth"}>Login</Link>
+            </p>
           </div>
         </div>
       </form>
