@@ -1,0 +1,53 @@
+.card.offer {
+  width: 250px;
+  background-color: #f1f1f1;
+  height: 70%;
+  padding: 1px;
+}
+.prod-img {
+  height: 75%;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+.offer img {
+  height: 99%;
+  width: 99%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.8rem;
+}
+
+.offer .title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.5;
+}
+.was {
+  text-decoration: line-through;
+  font-weight: 500;
+  margin: 3px;
+  background-color: darkorange;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.now {
+  margin-top: 1px;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  animation: glow 0.7s infinite alternate-reverse;
+}
+
+@keyframes glow {
+  0% {
+    background: rgb(222, 248, 222);
+    font-size: 0.4rem;
+  }
+  100% {
+    background: rgb(113, 228, 113);
+    font-size: 1.3rem;
+  }
+}

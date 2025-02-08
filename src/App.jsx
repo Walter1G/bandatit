@@ -6,7 +6,7 @@ import MainLayout from "./pages/MainLayout";
 import VendorLayout from "./pages/VendorLayout";
 import AdminLayout from "./pages/AdminLayout";
 import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
+
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
             </Routes>
             </div>
-          <Footer />
+         
         </BrowserRouter>
       </div>
     </>

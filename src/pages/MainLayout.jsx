@@ -1,29 +1,13 @@
 import Banner from "../components/banner/Banner";
+import Offers from "../components/offers/Offers";
+import Footer from "../components/Footer/Footer";
 
 const MainLayout = () => {
   return (
-    <main className="main">
+    <main className="page main">
       <Banner />
-      <section className="current-offers">
-        <h2>Current Offers</h2>
-        <div className="offers">
-          <div className="offer">
-            <img src="" alt="" />
-            <p>Offer Name</p>
-            <p>Price</p>
-          </div>
-        </div>
-      </section>
-      <section className="latest-items">
-        <h2>New on the Shop</h2>
-        <div className="items">
-          <div className="item">
-            <img src="" alt="" />
-            <p>Item Name</p>
-            <p>Price</p>
-          </div>
-        </div>
-      </section>
+      <Offers />
+     
       <section className="listings flex">
         <h2>Popular Listings</h2>
         <div className="listings">
@@ -42,7 +26,8 @@ const MainLayout = () => {
             <p>Author</p>
           </div>
         </div>
-      </section>
+          </section>
+          <Footer />
     </main>
   );
 };

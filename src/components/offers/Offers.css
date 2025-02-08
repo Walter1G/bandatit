@@ -1,0 +1,24 @@
+.current-offers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: red; */
+    height: 60vh;
+  }
+
+  .current-offers h2{
+    margin-bottom: 20px;
+
+  }
+
+  .current-offers .offers{
+    display: flex;   
+    gap: 2rem;
+    width: 90%;
+    /* background-color: blue; */
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    overflow-x: auto;
+
+  }

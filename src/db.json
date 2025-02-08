@@ -1,0 +1,89 @@
+{"users": [
+    {
+      "id": 1,
+      "email": "john.doe@example.com",
+      "phone": "123-456-7890",
+      "address": "123 Main St, Cityville",
+      "roleId": 2
+    },
+    {
+      "id": 2,
+      "email": "jane.smith@example.com",
+      "phone": "987-654-3210",
+      "address": "456 Oak St, Townsville",
+      "roleId": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Wireless Headphones",
+      "description": "Bluetooth noise-canceling headphones with 20-hour battery life.",
+      "count": 50,
+      "price": 99.99,
+      "category": 1,
+      "addedBy": 1,
+      "imageurl": "https://example.com/images/headphones.jpg",
+      "addDate": "2024-09-01",
+      "onOffer": true
+    },
+    {
+      "id": 2,
+      "title": "Smartphone",
+      "description": "Latest model smartphone with high-resolution camera.",
+      "count": 30,
+      "price": 699.99,
+      "category": 2,
+      "addedBy": 2,
+      "imageurl": "https://example.com/images/smartphone.jpg",
+      "addDate": "2024-08-25",
+      "onOffer": false
+    },
+    {
+      "id": 3,
+      "title": "Laptop",
+      "description": "Powerful laptop with high-speed processor and SSD storage.",
+      "count": 20,
+      "price": 1299.99,
+      "category": 1,
+      "addedBy": 1,
+      "imageurl": "https://example.com/images/laptop.jpg",
+      "addDate": "2024-07-15",
+      "onOffer": true
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "title": "User",
+      "description": "Standard user with basic access."
+    },
+    {
+      "id": 2,
+      "title": "Vendor",
+      "description": "Vendor with permissions to manage products."
+    },
+    {
+      "id": 3,
+      "title": "Admin",
+      "description": "Administrator with full access."
+    },
+    {
+      "id": 4,
+      "title": "SuperAdmin",
+      "description": "Super administrator with highest privileges."
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Electronics",
+      "description": "Electronic devices and accessories."
+    },
+    {
+      "id": 2,
+      "title": "Mobile Phones",
+      "description": "Latest smartphones and mobile accessories."
+    }
+  ]
+}
