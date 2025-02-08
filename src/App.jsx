@@ -8,6 +8,7 @@ import AdminLayout from "./pages/AdminLayout";
 import NavBar from "./components/NavBar/NavBar";
 import AuthPage from "./pages/AuthPage";
 import Signup from "./components/Singup/Signup";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/" element={<MainLayout />}></Route>
               <Route path="/vendor" element={<VendorLayout />} />
+              <Route path="/cart" element={<Cart />} />
               <Route path="/admin" element={<AdminLayout />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -1,0 +1,33 @@
+ .cart-card{
+    position: relative;
+    margin-top: 10rem;
+    min-width: 30vw;
+    height: 400px;    
+    place-items: center;
+    overflow-y: scroll;
+}
+
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    max-height: 40vh;
+}
+
+.cart-item img{
+    height: 50px;
+    width: 50px;
+    display: flex;
+
+}
+
+.btns{
+    position: fixed;  
+    margin: .5rem 1rem;  
+  
+}
+.btns button{
+   
+    padding: .5rem;
+}

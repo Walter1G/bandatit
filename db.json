@@ -2,20 +2,34 @@
   "users": [
     {
       "id": 1,
+      "fname": "John",
+      "lname": "Doe",
       "email": "john.doe@example.com",
       "phone": "123-456-7890",
       "address": "123 Main St, Cityville",
       "roleId": 2,
-      "password":"12345678"
+      "password": "12345678"
     },
     {
       "id": 2,
-      "email": "jane.smith@example.com",
+      "fname": "Jane",
+      "lname": "Doe",
+      "email": "jane@example.com",
       "phone": "987-654-3210",
       "address": "456 Oak St, Townsville",
-      "roleId": 1
-      ,
-      "password":"12345678"
+      "roleId": 1,
+
+      "password": "12345678"
+    },
+    {
+      "id": 3,
+      "fname": "Jade",
+      "lname": "Blue",
+      "email": "jade@example.com",
+      "phone": "987-654-3210",
+      "address": "456 Oak St, Townsville",
+      "roleId": 3,
+      "password": "12345678"
     }
   ],
   "products": [

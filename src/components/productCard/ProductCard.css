@@ -38,7 +38,7 @@
 
 .now {
   margin-top: 1px;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 0.8rem;
   animation: glow 0.7s infinite alternate-reverse;
   position: sticky;
@@ -49,6 +49,17 @@ p,
   margin-left: 0.4rem;
 }
 
+.title span {
+  cursor: pointer;
+}
+
+.title span:hover {
+  transform: scaleX(2);
+  background-color: rgb(113, 228, 113);
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+
 @keyframes glow {
   0% {
     background: rgb(222, 248, 222);
@@ -56,6 +67,6 @@ p,
   }
   100% {
     background: rgb(113, 228, 113);
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
