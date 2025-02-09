@@ -56,3 +56,13 @@ section {
   box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem rgba(170, 169, 169, 0.705),
     -0.2rem -0.2rem 0.3rem 0.1rem rgba(170, 169, 169, 0.705);
 }
+
+
+
+
+@media screen and (max-screen: 1100px) {
+  .container{
+    width: 90%;
+  }
+    
+}

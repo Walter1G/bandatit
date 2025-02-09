@@ -105,3 +105,8 @@
     position: relative;
     right: 2rem;
 }
+
+
+@media screen and (max-screen: 1100px) {
+    
+}
